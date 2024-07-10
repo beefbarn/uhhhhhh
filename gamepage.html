@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beef Barn Games</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <script src="gamepage-script.js"></script>
+</head>
+<body>
+  <center>
+    <div id="biggest-div">
+      <h1 id="page-header">Escape</h1>
+      <img id="narr-img" src="images/creepy-hall.jpg" style="width: 400px; height: 250px;"> <br> <br>
+      <div id="scenic-text">
+        <span id="scenic-writer"></span>
+        <span class="hidden-element" id="skip-scenic"></span>
+      </div> <br>
+      <div id="game-text">
+        <span id="game-writer"></span>
+        <span class="hidden-element" id="skip-game"></span>
+      </div> <br> <br>
+      <div id="new-button"></div> 
+      <div class="hidden-element" id="skipped-new-button"></div>
+      <br>
+      <div id="skip-div"><button id="skip-button" onclick="displaySkipped()">Skip...</button></div>
+      <br> <br>
+
+      <div class="card-slot" id="slot-1"></div>
+      <div class="card-slot" id="slot-2"></div>
+      <div class="card-slot" id="slot-3"></div>
+      <div class="card-slot" id="slot-4"></div>
+      <div class="card-slot" id="slot-5"></div>
+
+      <script>
+        scenicInitiation();
+        gameTextInitiation();
+        spawnNewButton(7700, "Next");
+      </script>
+    </div>
+  </center>
+</body>

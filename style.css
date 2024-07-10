@@ -1,0 +1,21 @@
+
+* {
+    font-family: "Inconsolata", monospace;
+}
+
+.showtime {
+    background-color: black;
+    color: white;
+}
+
+.card-slot {
+    width: 10px;
+    height: 260px;
+    background-color: white;
+    color: black;
+    display: inline;
+}
+
+.hidden-element {
+    display: none;
+}
